@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+  
+</head>
+<body onload="renderContact()">
+        <div class="container text-center">
+            <h1> Danh bạ</h1>
+        </div>
+        <table  class="table text-center" id="tableContent">
+           
+        </table>
+        <div class="text-right container">
+            <button onclick="AddForm()" class="btn btn-primary">Add contact</button>
+        </div>
+        <div id="AddForm" class="form-group container" style="display: none;">
+            <input type="text" class="form-control" id="InputName" placeholder="Name...">
+            <input type="tel" class="form-control" id="InputPhoneNumber" placeholder="PhoneNumber...">
+            <input type="email" class="form-control" id="InputEmail" placeholder="Email...">
+        </div>
+        <div id="EditForm" class="form-group container" style="display: none;">
+            <input type="text" class="form-control" id="EditName" placeholder="Name...">
+            <input type="tel" class="form-control" id="EditPhoneNumber" placeholder="PhoneNumber...">
+            <input type="email" class="form-control" id="EditEmail" placeholder="Email...">
+            <input type="hidden"  id="ID" placeholder="ID...">
+        </div>
+        <div class="container form-group">
+         <button class="btn btn-success text-right" id="btn-add" onclick="Add()" style="display: none;">Add</button>
+         <button class="btn btn-success text-right" id="btn-save"  onclick="SaveEdit()" style="display: none;">Save</button>
+         <button class="btn btn-danger text-right" id="btn-cancel"  onclick="Cancel()" style="display: none;">Cancel</button>
+        </div>
+    <script src="DanhBa.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
